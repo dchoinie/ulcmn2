@@ -1,7 +1,11 @@
-import React from 'react';
+import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-import Layout from '../components/layout';
+const IndexPage = () => (
+  <Layout>
+    <SEO title="Home" />
+  </Layout>
+)
 
-const IndexPage = () => <Layout />;
-
-export default IndexPage;
+export default IndexPage
