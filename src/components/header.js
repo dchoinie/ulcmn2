@@ -61,7 +61,9 @@ const Header = () => {
             <a className="navbar-link is-arrowless">Resources</a>
             <div className="navbar-dropdown">
               <a className="navbar-item has-text-black">Weekly Bulletin</a>
-              <a className="navbar-item has-text-black">Sermon</a>
+              <Link to="/sermon" className="navbar-item has-text-black">
+                Sermon
+              </Link>
               <a className="navbar-item has-text-black">Newsletter</a>
               <a className="navbar-item has-text-black">ULC Policies</a>
               <a className="navbar-item has-text-black">Chapel Council</a>

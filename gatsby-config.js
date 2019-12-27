@@ -5,6 +5,10 @@ module.exports = {
     title: `University Lutheran Chapel`,
     description: `LCMS Campus Ministry At The University Of Minnesota`,
     author: `Dan Choiniere`,
+    address: `328 10th Ave SE`,
+    city_state: `Minneapolis, MN`,
+    zip: `55414`,
+    phone: `612.331.2747`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,6 +22,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/images/favicon.png",
+      },
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: {
