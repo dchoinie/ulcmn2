@@ -9,6 +9,7 @@ export default () => {
         childImageSharp {
           fluid(quality: 100) {
             src
+            ...GatsbyImageSharpFluid
           }
         }
       }

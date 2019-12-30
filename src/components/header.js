@@ -52,7 +52,9 @@ const Header = () => {
               </a>
               <a className="navbar-item has-text-black">Construction</a>
               <a className="navbar-item has-text-black">Staff</a>
-              <a className="navbar-item has-text-black">History</a>
+              <Link to="/history" className="navbar-item has-text-black">
+                History
+              </Link>
             </div>
           </div>
           <a className="navbar-item">Calendar</a>
@@ -60,7 +62,9 @@ const Header = () => {
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link is-arrowless">Resources</a>
             <div className="navbar-dropdown">
-              <a className="navbar-item has-text-black">Weekly Bulletin</a>
+              <Link to="/bulletin" className="navbar-item has-text-black">
+                Weekly Bulletin
+              </Link>
               <Link to="/sermon" className="navbar-item has-text-black">
                 Sermon
               </Link>

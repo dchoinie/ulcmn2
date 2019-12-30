@@ -2,7 +2,7 @@ import React from "react"
 
 export default props => {
   return (
-    <div className="p-4">
+    <div className="p-4 m-2">
       <div className="flex justify-between">
         <div className="flex flex-col">
           <p>{props.sermon.dayInTheChurchYear}</p>
@@ -18,7 +18,9 @@ export default props => {
         <p>+ {props.sermon.title} +</p>
         <p>{props.sermon.scripture}</p>
       </div>
+
       <iframe
+        title={props.sermon.title}
         src={props.sermon.sermon.file.url}
         width="100%"
         height="500px"

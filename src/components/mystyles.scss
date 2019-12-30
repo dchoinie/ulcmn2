@@ -1,5 +1,6 @@
 @charset "utf-8";
 $red-primary: rgb(136, 31, 31);
+$black-primary: rgba(0, 0, 0, 0.8);
 $navbar-item-color: #fff;
 $navbar-item-hover-color: #000;
 
@@ -14,7 +15,7 @@ $navbar-item-hover-color: #000;
 }
 
 .footer-container {
-  background-color: $red-primary;
+  background-color: $black-primary;
 }
 
 .p-0 {
