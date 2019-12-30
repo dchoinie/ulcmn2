@@ -39,9 +39,13 @@ export default () => {
         <ul className="flex py-1">
           <div className="dropdown is-up is-hoverable mx-1">
             <div className="dropdown-trigger">
-              <a aria-haspopup="true" aria-controls="footer-about-dropup">
+              <div
+                className="pointer"
+                aria-haspopup="true"
+                aria-controls="footer-about-dropup"
+              >
                 <span className="has-text-white">About ULC</span>
-              </a>
+              </div>
             </div>
             <div className="dropdown-menu" id="footer-about-dropup" role="menu">
               <div className="dropdown-content">
@@ -80,9 +84,13 @@ export default () => {
           </li>
           <div className="dropdown is-up is-hoverable mx-1">
             <div className="dropdown-trigger">
-              <a aria-haspopup="true" aria-controls="footer-about-dropup">
+              <div
+                className="pointer"
+                aria-haspopup="true"
+                aria-controls="footer-about-dropup"
+              >
                 <span className="has-text-white">Resources</span>
-              </a>
+              </div>
             </div>
             <div className="dropdown-menu" id="footer-about-dropup" role="menu">
               <div className="dropdown-content">

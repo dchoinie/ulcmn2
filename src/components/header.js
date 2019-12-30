@@ -29,38 +29,47 @@ const Header = () => {
             style={{ width: "50px" }}
           />
         </Link>
-        <a
+        <div
           role="button"
-          classNae="navbar-burger burger"
+          className="navbar-burger burger pointer"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarMain"
+          style={{ border: "1px solid white" }}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </div>
       </div>
 
       <div id="navbarMain" className="navbar-menu">
         <div className="navbar-end">
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link is-arrowless">About ULC</a>
+            <div className="navbar-link is-arrowless pointer">About ULC</div>
             <div className="navbar-dropdown">
-              <a className="navbar-item has-text-black">
+              <Link to="/" className="navbar-item has-text-black">
                 Worship Times &amp; Location
-              </a>
-              <a className="navbar-item has-text-black">Construction</a>
-              <a className="navbar-item has-text-black">Staff</a>
+              </Link>
+              <Link to="/" className="navbar-item has-text-black">
+                Construction
+              </Link>
+              <Link to="/" className="navbar-item has-text-black">
+                Staff
+              </Link>
               <Link to="/history" className="navbar-item has-text-black">
                 History
               </Link>
             </div>
           </div>
-          <a className="navbar-item">Calendar</a>
-          <a className="navbar-item">Map &amp; Shuttle</a>
+          <Link to="/" className="navbar-item">
+            Calendar
+          </Link>
+          <Link to="/" className="navbar-item">
+            Map &amp; Shuttle
+          </Link>
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link is-arrowless">Resources</a>
+            <div className="navbar-link is-arrowless pointer">Resources</div>
             <div className="navbar-dropdown">
               <Link to="/bulletin" className="navbar-item has-text-black">
                 Weekly Bulletin
@@ -68,15 +77,29 @@ const Header = () => {
               <Link to="/sermon" className="navbar-item has-text-black">
                 Sermon
               </Link>
-              <a className="navbar-item has-text-black">Newsletter</a>
-              <a className="navbar-item has-text-black">ULC Policies</a>
-              <a className="navbar-item has-text-black">Chapel Council</a>
-              <a className="navbar-item has-text-black">Lutheran Resources</a>
+              <Link to="/" className="navbar-item has-text-black">
+                Newsletter
+              </Link>
+              <Link to="/" className="navbar-item has-text-black">
+                ULC Policies
+              </Link>
+              <Link to="/" className="navbar-item has-text-black">
+                Chapel Council
+              </Link>
+              <Link to="/" className="navbar-item has-text-black">
+                Lutheran Resources
+              </Link>
             </div>
           </div>
-          <a className="navbar-item">Library</a>
-          <a className="navbar-item">Contact</a>
-          <a className="navbar-item">Support</a>
+          <Link to="/" className="navbar-item">
+            Library
+          </Link>
+          <Link to="/" className="navbar-item">
+            Contact
+          </Link>
+          <Link to="/" className="navbar-item">
+            Support
+          </Link>
         </div>
       </div>
     </nav>
