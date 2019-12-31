@@ -62,10 +62,10 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <Link to="/" className="navbar-item">
+          <Link to="/calendar" className="navbar-item">
             Calendar
           </Link>
-          <Link to="/" className="navbar-item">
+          <Link to="/map-and-shuttle" className="navbar-item">
             Map &amp; Shuttle
           </Link>
           <div className="navbar-item has-dropdown is-hoverable">
