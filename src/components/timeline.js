@@ -3,6 +3,7 @@ import { Timeline, TimelineItem } from "vertical-timeline-component-for-react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import PageTitle from "../components/pageTitle"
+import ScrollUp from "../components/scrollUp"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -443,7 +444,10 @@ export default () => {
   `)
   return (
     <>
-      <PageTitle title="History Of ULC" subTitle="Explore the rich history of our campus ministry at the University of Minnesota by browsing through the pictures below." />
+      <PageTitle
+        title="History Of ULC"
+        subTitle="Explore the rich history of our campus ministry at the University of Minnesota by browsing through the pictures below."
+      />
       <Timeline lineColor={"#ddd"}>
         <TimelineItem key="001" dateText="1925">
           <h2 className="text-2xl">Campus Ministry Begins</h2>
@@ -921,6 +925,7 @@ export default () => {
           <Img fluid={data.history54.childImageSharp.fluid} />
         </TimelineItem>
       </Timeline>
+      <ScrollUp />
     </>
   )
 }
