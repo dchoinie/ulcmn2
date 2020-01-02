@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -17,10 +18,63 @@ const Header = () => {
   `)
   return (
     <nav
+      className="navbar py-2 px-24 flex justify-between"
+      style={{
+        backgroundColor: "transparent",
+      }}
+    >
+      <div className="has-text-white" style={{ width: "45%" }}>
+        <div className="flex justify-between h-full">
+          <div className="flex" style={{ width: "50%" }}>
+            <h2 className="self-center">Support</h2>
+          </div>
+          <div className="flex" style={{ width: "50%" }}>
+            <ul className="flex justify-between w-full">
+              <li className="mx-2 self-center">About ULC</li>
+              <li className="mx-2 self-center">Calendar</li>
+              <li className="mx-2 self-center">Map &amp; Shuttle</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center" style={{ width: "10%" }}>
+        <Img
+          fluid={data.logo.childImageSharp.fluid}
+          style={{ width: "50px" }}
+        />
+      </div>
+      <div className="has-text-white" style={{ width: "45%" }}>
+        <div className="flex justify-between h-full">
+          <div className="flex" style={{ width: "50%" }}>
+            <ul className="flex justify-between w-full">
+              <li className="mx-2 self-center">Resources</li>
+              <li className="mx-2 self-center">Library</li>
+              <li className="mx-2 self-center">Contact</li>
+            </ul>
+          </div>
+          <div className="flex justify-end" style={{ width: "50%" }}>
+            <div className="flex">
+              <FaFacebook className="mx-2 self-center" />
+              <FaTwitter className="mx-2 self-center" />
+              <FaInstagram className="mx-2 self-center" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
+}
+
+export default Header
+
+{
+  /* <nav
       className="navbar py-2 px-12"
       role="navigation"
       aria-label="main navigation"
-      style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
+      style={{
+        backgroundColor: "transparent",
+      }}
     >
       <div className="navbar-brand">
         <Link to="/">
@@ -102,8 +156,5 @@ const Header = () => {
           </Link>
         </div>
       </div>
-    </nav>
-  )
+    </nav> */
 }
-
-export default Header

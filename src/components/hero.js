@@ -21,9 +21,13 @@ export default () => {
       }
     }
   `)
+  const backgroundImageStack = [
+    data.exterior.childImageSharp.fluid,
+    `linear-gradient(to bottom left, rgba(58, 28, 113, 0.9), rgba(215, 109, 119, 0.9), rgba(255, 175, 123, 0.9))`,
+  ].reverse()
   return (
     <BackgroundImage
-      fluid={data.exterior.childImageSharp.fluid}
+      fluid={backgroundImageStack}
       style={{
         height: "100vh",
         backgroundSize: "cover",
