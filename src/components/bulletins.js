@@ -1,40 +1,39 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Sermon from "./sermon"
+import Bulletin from "./bulletin"
 
-const getSermons = graphql`
+const getBulletins = graphql`
   {
-    sermons: allContentfulSermon(sort: { fields: date, order: DESC }) {
+    bulletins: allContentfulBulletin(sort: { fields: date, order: DESC }) {
       edges {
         node {
-          author
           contentful_id
           date(formatString: "MMMM DD, YYYY")
           dayInTheChurchYear
-          scripture
-          title
-          sermon {
+          slug
+          bulletin {
             file {
               url
             }
           }
-          slug
         }
       }
     }
   }
 `
 
-const sermons = () => {
+const bulletins = () => {
   return (
     <div>
       <StaticQuery
-        query={getSermons}
+        query={getBulletins}
         render={data => {
           return (
             <div className="info-grid">
-              {data.sermons.edges.map(({ node: sermon }) => {
-                return <Sermon key={sermon.contentful_id} sermon={sermon} />
+              {data.bulletins.edges.map(({ node: bulletin }) => {
+                return (
+                  <Bulletin key={bulletin.contentful_id} bulletin={bulletin} />
+                )
               })}
             </div>
           )
@@ -44,4 +43,4 @@ const sermons = () => {
   )
 }
 
-export default sermons
+export default bulletins

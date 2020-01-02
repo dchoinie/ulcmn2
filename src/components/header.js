@@ -77,7 +77,7 @@ const Header = () => {
               <Link to="/sermon" className="navbar-item has-text-black">
                 Sermon
               </Link>
-              <Link to="/" className="navbar-item has-text-black">
+              <Link to="/newsletter" className="navbar-item has-text-black">
                 Newsletter
               </Link>
               <Link to="/" className="navbar-item has-text-black">
