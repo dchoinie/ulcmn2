@@ -938,3 +938,15 @@ $navbar-item-hover-color: #000;
 .pointer {
   cursor: pointer;
 }
+.underline {
+  text-decoration: underline;
+}
+.unordered-dots {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 1.5rem;
+}
+.ordered-list {
+  list-style-position: inside;
+  margin-left: 1.5rem;
+}

@@ -80,7 +80,7 @@ const Header = () => {
               <Link to="/newsletter" className="navbar-item has-text-black">
                 Newsletter
               </Link>
-              <Link to="/" className="navbar-item has-text-black">
+              <Link to="/policies" className="navbar-item has-text-black">
                 ULC Policies
               </Link>
               <Link to="/" className="navbar-item has-text-black">
