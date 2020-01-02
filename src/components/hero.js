@@ -23,7 +23,7 @@ export default () => {
   `)
   const backgroundImageStack = [
     data.exterior.childImageSharp.fluid,
-    `linear-gradient(to bottom left, rgba(58, 28, 113, 0.9), rgba(215, 109, 119, 0.9), rgba(255, 175, 123, 0.9))`,
+    `linear-gradient(to bottom, rgba(32, 0, 44, 0.8) 5%, rgba(203, 180, 212, 0.3) 20%, rgba(0,0,0,0))`,
   ].reverse()
   return (
     <BackgroundImage
@@ -32,7 +32,7 @@ export default () => {
         height: "100vh",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        marginTop: "-68.28px",
+        marginTop: "-84.28px",
       }}
     >
       <div
