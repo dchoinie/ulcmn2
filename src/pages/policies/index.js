@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../components/layout"
-import PageTitle from "../components/pageTitle"
+import Layout from "../../components/layout"
+import PageTitle from "../../components/pageTitle"
 import { Link } from "gatsby"
 
 export default () => {
@@ -84,7 +84,7 @@ export default () => {
         </p>
         <p className="font-bold underline my-2">Regarding Sexual Misconduct</p>
         <p>
-          <Link to="/sexual-misconduct">
+          <Link to="/policies/sexual-misconduct">
             See the document entitled “General Policy Regarding Sexual
             Misconduct Prevention” &#40;Adopted 2013&#41;
           </Link>
